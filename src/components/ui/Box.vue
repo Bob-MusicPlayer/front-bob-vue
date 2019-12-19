@@ -5,11 +5,8 @@
 </template>
 
 <script>
-    const SizePropsType = {
-        default: null,
-        type: [Number, String]
-    };
-    
+    import {SizePropsType} from "@/components/ui/constants/proptypes";
+
     export default {
         name: "Box",
         props: {

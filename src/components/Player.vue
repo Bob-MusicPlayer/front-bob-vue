@@ -30,7 +30,7 @@
 </script>
 
 <style scoped>
-    host {
+    :host {
         height: 100%;
     }
 </style>

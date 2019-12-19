@@ -27,11 +27,11 @@
     }
 
     .menu {
-        grid-area: main;
+        grid-area: menu;
     }
 
     .main {
-        grid-area: menu;
+        grid-area: main;
     }
 
     .controls {

@@ -1,10 +1,14 @@
 <template>
-    <button :class="{rectangle: shape === 'rectangle', rounded: shape === 'rounded', circle: shape === 'circle'}">
+    <button :class="{rectangle: shape === 'rectangle', rounded: shape === 'rounded', circle: shape === 'circle'}"
+            :style="{backgroundColor: this.buttonColor}">
         <slot/>
     </button>
 </template>
 
 <script>
+    import {Color} from "@/components/ui/constants/proptypes";
+    import {getColor} from "@/components/ui/utils/color";
+
     export default {
         name: "Button",
         props: {
@@ -15,7 +19,12 @@
                     return ['rectangle', 'rounded', 'circle'].indexOf(value) !== -1
                 }
             },
-            color: String
+            color: Color
+        },
+        computed: {
+            buttonColor: function () {
+                return getColor(this.$props.color)
+            }
         }
     }
 </script>
