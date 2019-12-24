@@ -7,6 +7,6 @@ export const Color = {
     default: "primary",
     type: String,
     validate: function (value) {
-        return ['primary', 'secondary', 'danger', 'warning', 'success', 'info', 'translucent'].indexOf(value) !== -1 || value.startsWith("#")
+        return ['primary', 'secondary', 'danger', 'warning', 'success', 'info', 'translucent', 'transparent'].indexOf(value) !== -1 || value.startsWith("#")
     }
 };

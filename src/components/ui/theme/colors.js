@@ -6,5 +6,6 @@ export const colors = {
     'success': 'rgba(48,227,202,1)',
     'info': 'rgba(122,199,196,1)',
     'translucent': 'rgba(255, 255, 255, 0.5)',
+    'transparent': 'transparent',
     'white': 'rgba(255, 255, 255, 1)'
 };
