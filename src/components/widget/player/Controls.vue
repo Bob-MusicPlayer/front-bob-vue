@@ -56,9 +56,30 @@
                             <Typography size="13px">00:45</Typography>
                             <Typography size="13px">-02:32</Typography>
                         </Box>
-                        <ProgressBar percent="40" />
+                        <ProgressBar percent="40"/>
                     </Box>
                 </Card>
+                <Box margin-top=".75rem">
+                    <Card :style="this.lol" color="#e4ecf7">
+                        <Box display="flex" justify-content="space-between">
+                            <Box display="flex">
+                                <Box height="50px" width="50px">
+                                    <BImage source="https://direct.rhapsody.com/imageserver/images/alb.391704845/500x500.jpg"
+                                            shape="circle"/>
+                                </Box>
+                                <Box display="flex" flex-direction="column" justify-content="center" margin-left="10px">
+                                    <Typography full-width weight="bold">dawiuhdwiu</Typography>
+                                    <Typography size=".8rem">dawiuhdwiu</Typography>
+                                </Box>
+                            </Box>
+                            <Box display="flex" align-items="center">
+                                <font-awesome-icon color="#8a939c" size="sm" icon="times"/>
+                                <Divider/>
+                                <font-awesome-icon color="#8a939c" size="sm" icon="bars"/>
+                            </Box>
+                        </Box>
+                    </Card>
+                </Box>
             </Box>
         </Card>
     </Box>
@@ -72,10 +93,12 @@
     import BImage from "@/components/ui/Image";
     import Typography from "@/components/ui/Typography";
     import ProgressBar from "../../ui/utils/ProgressBar";
+    import Divider from "@/components/ui/Divider";
 
     export default {
         name: "Controls",
         components: {
+            Divider,
             ProgressBar,
             Typography,
             BImage,
@@ -88,6 +111,11 @@
             this.rootStyles = {
                 borderRadius: "0.5rem",
                 padding: "0.75rem 0.5rem 0.5rem 0.5rem",
+            };
+
+            this.lol = {
+                borderRadius: "0.5rem",
+                padding: "0.75rem 0.5rem"
             };
         }
     }

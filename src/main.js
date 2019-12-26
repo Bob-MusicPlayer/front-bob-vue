@@ -10,7 +10,8 @@ import { faForward } from '@fortawesome/free-solid-svg-icons'
 import { faBackward } from '@fortawesome/free-solid-svg-icons'
 import { faRandom } from '@fortawesome/free-solid-svg-icons'
 import { faSync } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon, FontAwesomeLayers } from '@fortawesome/vue-fontawesome'
 
 library.add(faCog);
 library.add(faHeart);
@@ -20,8 +21,10 @@ library.add(faForward);
 library.add(faBackward);
 library.add(faRandom);
 library.add(faSync);
+library.add(faBars);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.component('font-awesome-layers', FontAwesomeLayers)
 
 Vue.config.productionTip = false;
 
